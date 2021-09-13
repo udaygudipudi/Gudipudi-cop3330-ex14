@@ -1,0 +1,37 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 1 Solution
+ *  Copyright 2021 Uday Gudipudi
+ */
+
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+    
+    Scanner scan = new Scanner(System.in);
+
+     System.out.print("What is the order amount? ");
+     double order = scan.nextDouble();
+
+     System.out.print("What is the state? ");
+     String state= scan.next();
+
+     if (state.equals("WI")){
+
+       double tax = order * 0.055;
+
+       double total = order + tax;
+       
+       System.out.printf("The subtotal is $%.2f. %n", order);
+       System.out.printf("The tax is $%.2f. %n", tax);
+       System.out.printf("The total is $%.2f. %n", total);
+
+     }
+
+     else {
+
+       System.out.printf("The total is $%.2f. %n", order);
+
+     }
+
+  }
+}
